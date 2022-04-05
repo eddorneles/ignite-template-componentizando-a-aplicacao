@@ -2,10 +2,11 @@ import { Icon } from './Icon';
 
 import '../styles/button.scss';
 import { ButtonHTMLAttributes } from 'react';
+import { GenreName } from '../definitions/types';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   title: string;
-  iconName: 'action' | 'comedy' | 'documentary' | 'drama' | 'horror' | 'family';
+  iconName: GenreName;
   selected: boolean;
 }
 
